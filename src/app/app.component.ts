@@ -13,10 +13,10 @@ import { SliderComponent } from './slider/slider.component';
 export class AppComponent {
   title = 'lab';
 
-  currentComponent = 'home';
+  // currentComponent = 'home';
 
-  switchToComponent(component: string) {
-    this.currentComponent = component;
-  }
+  // switchToComponent(component: string) {
+  //   this.currentComponent = component;
+  // }
   
 }

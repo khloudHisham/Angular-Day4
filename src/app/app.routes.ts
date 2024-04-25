@@ -12,5 +12,4 @@ export const routes: Routes = [
     { path: 'products/:id/edit', component: ProductFormComponent },
     { path: '**', component:ErrorNotFoundComponent },
 
-
 ];
