@@ -45,7 +45,18 @@ export class ProductFormComponent implements OnInit {
       this.router.navigate(['/products']);
     } else {
       // edit
+      debugger
+      let id =this.productId = this.activatedRoute.snapshot.params['id'];
+      let newProduct: Iproduct = {
+        id,
+        name: this.name,
+        price: this.price,
+        quantity: this.quantity,
+      };
+      this.productServices.editProduct(id,newProduct)
       this.router.navigate(['/products']);
+      debugger
     }
   }
 }
+

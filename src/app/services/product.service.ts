@@ -27,12 +27,15 @@ export class ProductService {
     return this.products;
   }
   //We will make it 
+
   editProduct(productId: number, product: Iproduct) {
-    const index = this.products.findIndex((p) => p.id === productId);
+    debugger
+    const index = this.products.findIndex((p) => p.id == productId);
     if (index !== -1) {
       this.products[index] = { ...this.products[index], ...product };
     }
     return this.products;
+    debugger
   }
   
 }

@@ -24,5 +24,7 @@ export class ProductspageComponent implements OnInit{
     deleteHandler(productId: number) {
       this.products = this.productservice.deleteProduct(productId);
     }
+
+    
   }
 
